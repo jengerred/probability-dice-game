@@ -1,0 +1,92 @@
+/* Reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0f172a; /* deep slate blue */
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the entire app */
+body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Dice styling */
+.dice {
+  width: 80px;
+  height: 80px;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Inputs */
+input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid #e2e8f0;
+  width: 220px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Fact box */
+.fact-box {
+  background: #e2e8f0;
+  color: #000;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Game box */
+.game-box {
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+}
+
+/* Round summary */
+.summary-box {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* KaTeX fix */
+.katex {
+  font-size: 1.2rem;
+}
